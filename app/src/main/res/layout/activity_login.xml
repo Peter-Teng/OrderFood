@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,2">
+        <TableRow android:paddingTop="230dp">
+            <TextView />
+            <EditText
+                android:gravity="center"
+                android:layout_height="55dp"
+                android:layout_width="250dp"
+                android:inputType="text|none"
+                android:textColorHint="#BEBEBE"
+                android:hint="请输入账号"
+                android:drawableLeft="@drawable/portrait"
+                android:id="@+id/user_name"
+                />
+            <TextView />
+        </TableRow>
+
+        <TableRow android:paddingTop="25dp">
+            <TextView />
+            <EditText
+                android:gravity="center"
+                android:layout_height="55dp"
+                android:layout_width="250dp"
+                android:inputType="textPassword"
+                android:hint="请输入6-16位的密码"
+                android:textColorHint="#BEBEBE"
+                android:drawableLeft="@drawable/lock"
+                android:id="@+id/password"
+                />
+            <TextView />
+        </TableRow>
+
+        <TableRow android:paddingTop="25dp">
+
+            <TextView />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_rectangle"
+                android:text="登录"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:padding="5dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:textSize="15sp"
+        android:textColor="#7A7A7A"
+        android:text="注册"
+        android:gravity="right|center_vertical"
+        />
+    <TextView
+        android:padding="5dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget_pwd"
+        android:textSize="15sp"
+        android:textColor="#7A7A7A"
+        android:text="忘记密码？"
+        android:gravity="center"
+        />
+</FrameLayout>

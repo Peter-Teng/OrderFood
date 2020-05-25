@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/melody"
+    >
+    <TextView
+        android:fontFamily="cursive"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="User's Information"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="120dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@drawable/text_border"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@drawable/text_border"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_marginTop="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@drawable/text_border"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/exit_button"
+        android:text="退出登录"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:layout_marginTop="560dp"
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑信息"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        />
+
+</FrameLayout>

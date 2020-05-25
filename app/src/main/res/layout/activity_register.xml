@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@drawable/working_cell"
+    tools:context=".RegisterActivity">
+
+    <TextView
+    android:fontFamily="cursive"
+    android:layout_marginTop="43dp"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:text="Register"
+    android:textStyle="bold"
+    android:textSize="35sp"
+    android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:hint="请输入您的注册用户名"
+        android:layout_width="350dp"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="请输入您的注册密码(6-16位）"
+        android:layout_width="350dp"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/password_confirm"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="请再次确认您的注册密码"
+        android:layout_width="350dp"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="请输入您的手机号"
+        android:layout_width="350dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:fontFamily="cursive"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Are U GG or MM?"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="女" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_rectangle"
+        android:text="提交注册"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:fontFamily="casual"/>
+
+</LinearLayout>
